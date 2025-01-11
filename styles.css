@@ -1,0 +1,142 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#about-me {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e8f5e9;
+}
+
+#about-me h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #388E3C;
+}
+
+#about-me p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+#projects article {
+    background-color: #f9f9f9;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 30px);
+}
+
+#projects h3 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+#skills {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e0f7fa;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 1.2em;
+    position: relative;
+    color: #00796B;
+}
+
+#skills ul li::before {
+    content: "✔️";
+    position: absolute;
+    left: -25px;
+    top: 0;
+}
+
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+#contact form {
+    display: inline-block;
+    text-align: left;
+    max-width: 500px;
+    width: 100%;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    #projects article {
+        width: calc(100% - 30px);
+    }
+}
